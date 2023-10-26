@@ -1,9 +1,7 @@
-<div class="g-col-6 g-col-md-4">
-  <div class="card mb-2 text-center bg-dark">
-    <img [src]="gif.images.downsized_medium.url" class="card-img-bottom ">
-    <div class="card-body text-white ">
-      <p class="card-text"> {{ gif.title }} </p>
-    </div>
+<div class="card mb-1 text-center bg-dark d-flex align-items-center animate__backInDown animate__animated">
+  <!-- <img [src]="gif.images.downsized_medium.url" class="card-img-bottom w-75 h-75 pt-4"> -->
+  <shared-image [src]="gif.images.downsized_medium.url"></shared-image>
+  <div class="card-body text-white ">
+    <p class="card-text"> {{ gif.title }} </p>
   </div>
 </div>
-

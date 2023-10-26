@@ -5,13 +5,15 @@ import { GifsService } from '../../services/gifs.service';
   selector: 'gifs-search-box',
   template: `
     <h5>Buscar: </h5>
-    <input
-      type="text"
-      class="form-control"
-      placeholder="Buscar gifs..."
-      (keyup.enter)="searchTag()"
-      #txtTagInput
-    >
+    <div class="d-flex">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Buscar gifs..."
+        (keyup.enter)="searchTag()"
+        #txtTagInput
+      ><button class="btn btn-primary mx-2" (click)="searchTag()">Buscar</button>
+    </div>
   `
 })
 
